@@ -21,6 +21,8 @@ media
 *.py[cod]
 *$py.class
 
+./mysite/config/local_settings.py
+
 # C extensions
 *.so
 
