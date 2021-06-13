@@ -1,18 +1,20 @@
 <head>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="{% url 'index' %}">長岡市非公認 HOME Page!</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-            <a class="nav-item nav-link" href="{% url 'index' %}">Home</a>
-            <a class="nav-item nav-link" href="{% url 'meisho' %}">長岡市"迷"所案内</a>
-            <a class="nav-item nav-link" href="{% url 'tabemono' %}">食べ物屋情報</a>
-            <a class="nav-item nav-link" href="{% url 'nomiya' %}">飲み屋MAP</a>
-            <a class="nav-item nav-link" href="{% url 'uwasa' %}">長岡市民のうわさ話</a>
-            <a class="nav-item nav-link" href="{% url 'blog:index' %}">ブログ</a>
+    <div class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="{% url 'index' %}">長岡市非公認 HOME Page!</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                <a class="nav-item nav-link" href="{% url 'index' %}">Home</a>
+                <a class="nav-item nav-link" href="{% url 'meisho' %}">長岡市"迷"所案内</a>
+                <a class="nav-item nav-link" href="{% url 'tabemono' %}">食べ物屋情報</a>
+                <a class="nav-item nav-link" href="{% url 'nomiya' %}">飲み屋MAP</a>
+                <a class="nav-item nav-link" href="{% url 'uwasa' %}">長岡市民のうわさ話</a>
+                <a class="nav-item nav-link" href="{% url 'blog:index' %}">ブログ</a>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </div>
 </head>
