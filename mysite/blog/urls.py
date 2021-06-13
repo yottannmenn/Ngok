@@ -9,4 +9,5 @@ app_name = 'blog'
 urlpatterns = [
     path("", TemplateView.as_view(template_name="blog/index.html"), name="index"),
     path('post_list/', ListView.as_view(model=Post), name='post_list'),
+    path('post_create/', views.PostCreateView.as_view(), name='post_create'),
 ]
