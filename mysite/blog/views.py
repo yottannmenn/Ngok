@@ -10,7 +10,24 @@ from django.views import generic
 from django.urls import reverse_lazy
 
 
-class PostCreateView(generic.CreateView):  # 追加
-    model = Post  # 作成したい model を指定
-    form_class = PostCreateForm  # 作成した form クラスを指定
+class PostCreateView(generic.CreateView):
+    mode = "Create"
+    model = Post
+    form_class = PostCreateForm
+    success_url = reverse_lazy('blog:post_list')
+
+
+class PostDetailView(generic.DetailView):
+    model = Post
+
+
+class PostUpdateView(generic.UpdateView):
+    mode = "Update"
+    model = Post
+    form_class = PostCreateForm
+    success_url = reverse_lazy('blog:post_detail')
+
+
+class PostDeleteView(generic.DeleteView):
+    model = Post
     success_url = reverse_lazy('blog:post_list')

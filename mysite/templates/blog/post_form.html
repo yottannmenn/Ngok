@@ -9,6 +9,10 @@
         <td>{{ form.text }}</td>
       </tr>
   </table>
-  <button type="submit" class="btn btn-primary">送信</button>
+  
+    <button type="submit" class="btn btn-primary">送信</button>
+    {% if view.mode == "Update" %}
+      <button type="submit" class="btn btn-primary">削除</button>
+    {% endif %}
   {% csrf_token %}
 </form>
