@@ -9,7 +9,9 @@
     <tr>
       <th>本文</th>
       <!-- linebreaksbk を入れると改行タグでちゃんと改行して表示されるようになる -->
-      <td>{{ post.text | linebreaksbr}}</td>
+      <div class="markdownx">
+        <td>{{ post.get_text_markdownx | safe}}</td>
+      </div>
     </tr>
     <tr>
       <th>日付</th>
