@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'bootstrap4',
     'blog.apps.BlogConfig',
+    'markdownx',
 ]
 
 MIDDLEWARE = [
@@ -132,3 +133,7 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 # リリース環境だと以下のパスから静的ファイルが配信される
 STATIC_ROOT = '/var/www/{}/static'.format(PROJECT_NAME)
+
+# メディアファイル用の設定
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")

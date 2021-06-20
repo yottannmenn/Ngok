@@ -7,6 +7,7 @@ name = "pypi"
 django = "==2.2"
 wakatime = "*"
 django-bootstrap4 = "*"
+django-markdownx = "*"
 
 [dev-packages]
 
