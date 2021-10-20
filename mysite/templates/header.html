@@ -1,10 +1,10 @@
 <head>
     <div class="container">
-        <div class="jumbotron text-dark rounded-0">
+        <div class="jumbotron text-dark rounded-0 mb-0">
             <h1 class="mb-1">長岡市非公認HOME Page！</h1>
             <p>Nagaoka City Unofficial Home Page!</p>
         </div>
-        <nav class="navbar navbar-expand navbar-light bg-light">
+        <nav class="navbar navbar-expand navbar-light bg-light mb-4">
             <ul class="navbar-nav"><a class="nav-item nav-link {% if request.path == '/' %}active{% endif %}" href="{% url 'index' %}">Home</a></ul>
             <ul class="navbar-nav"><a class="nav-item nav-link {% if request.path == '/hanabi/' %}active{% endif %}" href="{% url 'hanabi' %}">長岡花火リンク集</a></ul>
             <ul class="navbar-nav"><a class="nav-item nav-link {% if request.path == '/meisho/' %}active{% endif %}" href="{% url 'meisho' %}">長岡市"迷"所案内</a></ul>
