@@ -11,6 +11,7 @@
             <ul class="navbar-nav"><a class="nav-item nav-link {% if request.path == '/tabemono/' %}active{% endif %}" href="{% url 'tabemono' %}">食べ物屋情報</a></ul>
             <ul class="navbar-nav"><a class="nav-item nav-link {% if request.path == '/nomiya/' %}active{% endif %}" href="{% url 'nomiya' %}">飲み屋MAP</a></ul>
             <ul class="navbar-nav"><a class="nav-item nav-link {% if request.path == '/uwasa/' %}active{% endif %}" href="{% url 'uwasa' %}">長岡市民のうわさ話</a></ul>
+            <ul class="navbar-nav"><a class="nav-item nav-link {% if request.path == '/blog/post_list/' %}active{% endif %}" href="{% url 'blog:post_list' %}">ブログ</a></ul>
         </nav>
     </div>
 </head>
