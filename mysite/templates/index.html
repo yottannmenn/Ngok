@@ -8,53 +8,75 @@
   {% include "header.html" %}
 
   
-  <main class="container">
-    <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
-        <div class="col-md-12 pt-5 -0px">
-            <h1 class="display-6 font-weight-bold">長岡花火に関するリンク</h1>
-            <p class="lead my-3">長岡といえばやっぱり花火を抜きにしては語れません｡ちなみに私はまだ観ていない｡</p>
-            <p class="lead mb-0">
-              <a href="{% url 'hanabi' %}" class="text-white fw-bold">詳細を見る</a>
-            </p>
-          </div>
+  <main class="container-fluid">
+    <div class="row">
+      <div class="col-md-5 mb-4 p-2 text-white rounded-left bg-dark">
+        画像
       </div>
-      <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
-        <div class="col-md-12 pt-5 px-0">
-            <h1 class="display-6 font-weight-bold">長岡"謎"所案内</h1>
-            <p class="lead my-3">長岡の知る人ぞ知る"迷"所を集めてみました。長岡市民でもここに載っているすべてを知っている人はまれなんじゃないでしょうか？さあ、これであなたも長岡通！
-                ちなみに表の観光"名"所案内は、長岡に関するリンクからチェックしてみて下さい。</p>
-            <p class="lead mb-0">
-              <a href="{% url 'meisho' %}" class="text-white fw-bold">詳細を見る</a>
-            </p>
-          </div>
+      <div class="col-md-7 mb-4 p-2 rounded-right">
+        <div class="card-body">
+          <h4 class="card-title">長岡花火リンク集</h4>
+          <p class="card-text">長岡といえばやっぱり花火を抜きにしては語れません。でも面倒なので、花火の紹介は他の方々にお任せします。<br>
+          </p>
+          <a href="{% url 'hanabi' %}" class="text-dark fw-bold">詳細を見る</a>
+        </div>
       </div>
-      <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
-        <div class="col-md-12 pt-5 px-0">
-            <h1 class="display-6 font-weight-bold">長岡食べ物や情報</h1>
-            <p class="lead my-3">長岡の食べ物屋さんを集めてみました。ラインナップを見ると、いかにも学生が選んだメンツだというのが一目で分かります。</p>
-            <p class="lead mb-0">
-              <a href="{% url 'tabemono' %}" class="text-white fw-bold">詳細を見る</a>
-            </p>
-          </div>
+    </div>
+    <div class="row">
+      <div class="col-md-5 mb-4 p-2 text-white rounded-left bg-dark">
+        画像
       </div>
-      <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
-        <div class="col-md-12 pt-5 px-0">
-            <h1 class="display-6 font-weight-bold">長岡駅前飲み屋マップ</h1>
-            <p class="lead my-3">長岡駅前、俗に殿町界隈と呼ばれる辺りを中心として、飲み屋さんを紹介しています。個人的な思い入れや偏見に満ちたコメントなので、参考になさらぬように。</p>
-            <p class="lead mb-0">
-              <a href="{% url 'nomiya' %}" class="text-white fw-bold">詳細を見る</a>
-            </p>
-          </div>
+      <div class="col-md-7 mb-4 p-2 rounded-right">
+        <div class="card-body">
+          <h4 class="card-title">長岡"謎"所案内</h4>
+          <p class="card-text">長岡の知る人ぞ知る"迷"所を集めてみました。長岡市民でもここに載っているすべてを知っている人はまれなんじゃないでしょうか？<br>
+            さあ、これであなたも長岡通！<br>
+            ちなみに表の観光"名"所案内は、長岡に関するリンクからチェックしてみて下さい。
+          </p>
+          <a href="{% url 'meisho' %}" class="text-dark fw-bold">詳細を見る</a>
+        </div>
       </div>
-      <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
-        <div class="col-md-12 pt-5 px-0">
-            <h1 class="display-6 font-weight-bold">長岡市民のうわさ話</h1>
-            <p class="lead my-3">全然発展しない長岡ニュータウンや、ついに計画倒れに終わったスペースネオトピア。さらに謎の市長恐喝事件など、ただの地方都市とは思えないほど話題性の多い長岡市。億の資産を持つ田中真紀子のどこが主婦感覚なんだ？</p>
-            <p class="lead mb-0">
-              <a href="{% url 'uwasa' %}" class="text-white fw-bold">詳細を見る</a>
-            </p>
-          </div>
+    </div>
+    <div class="row">
+      <div class="col-md-5 mb-4 p-2 text-white rounded-left bg-dark">
+        画像
       </div>
+      <div class="col-md-7 mb-4 p-2 rounded-right">
+        <div class="card-body">
+          <h4 class="card-title">長岡食べ物や情報</h4>
+          <p class="card-text">長岡の食べ物屋さんを集めてみました。ラインナップを見ると、いかにも学生が選んだメンツだというのが一目で分かります。</p>
+          <a href="{% url 'tabemono' %}" class="text-dark fw-bold">詳細を見る</a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-5 mb-4 p-2 text-white rounded-left bg-dark">
+        画像
+      </div>
+      <div class="col-md-7 mb-4 p-2 rounded-right">
+        <div class="card-body">
+          <h4 class="card-title">長岡駅前飲み屋マップ</h4>
+          <p class="card-text">長岡駅前、俗に殿町界隈と呼ばれる辺りを中心として、飲み屋さんを紹介しています。個人的な思い入れや偏見に満ちたコメントなので、参考になさらぬように。</p>
+          <a href="{% url 'nomiya' %}" class="text-dark fw-bold">詳細を見る</a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-5 mb-4 p-2 text-white rounded-left bg-dark">
+        画像
+      </div>
+      <div class="col-md-7 mb-4 p-2 rounded-right">
+        <div class="card-body">
+          <h4 class="card-title">長岡市民のうわさ話</h4>
+          <p class="card-text">全然発展しない長岡ニュータウンや、ついに計画倒れに終わったスペースネオトピア。<br>
+            さらに謎の市長恐喝事件など、ただの地方都市とは思えないほど話題性の多い長岡市。<br>
+            億の資産を持つ田中真紀子のどこが主婦感覚なんだ？
+          </p>
+          <a href="{% url 'uwasa' %}" class="text-dark fw-bold">詳細を見る</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </main>
   
   {% include "footer.html" %}
