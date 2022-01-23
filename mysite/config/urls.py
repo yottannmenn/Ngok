@@ -30,6 +30,7 @@ urlpatterns = [
     path("uwasa/", TemplateView.as_view(template_name="uwasa.html"), name="uwasa"),
     path('blog/', include('blog.urls')),
     path('markdownx/', include('markdownx.urls')),
+    path('accounts/', include('django.contrib.auth.urls')),
 ]
 
 if settings.DEBUG:
