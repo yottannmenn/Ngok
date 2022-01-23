@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %} Home page!!{% endblock %}
+
+{% block content %}
+
+  {% include "header.html" %}
+
+    <form action="" method="POST">
+      <td>{{ form.as_p }}
+          {{ form.media }}
+      </td>
+      
+      <button type="submit" class="btn btn-primary">送信</button>
+        {% if view.mode == "Update" %}
+      <button type="submit" class="btn btn-primary">削除</button>
+        {% endif %}
+        {% csrf_token %}
+    </form>
+
+{% endblock %}

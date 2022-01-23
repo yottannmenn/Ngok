@@ -30,7 +30,15 @@ PROJECT_NAME = os.path.basename(BASE_DIR)
 # local_settingsに記述
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
+
+try:
+    from .local_settings import *
+except ImportError:
+    pass
+
+if not DEBUG:
+    SECRET_KEY = os.environ['SECRET_KEY']
 
 ALLOWED_HOSTS = []
 
@@ -45,6 +53,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'bootstrap4',
+    'blog.apps.BlogConfig',
+    'markdownx',
 ]
 
 MIDDLEWARE = [
@@ -131,3 +141,7 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 # リリース環境だと以下のパスから静的ファイルが配信される
 STATIC_ROOT = '/var/www/{}/static'.format(PROJECT_NAME)
+
+# メディアファイル用の設定
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")

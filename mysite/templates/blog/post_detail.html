@@ -1,0 +1,20 @@
+
+
+
+<table>
+    <tr>
+      <th>タイトル</th>
+      <td>{{ post.title }}</td>
+    </tr>
+    <tr>
+      <th>本文</th>
+      <!-- linebreaksbk を入れると改行タグでちゃんと改行して表示されるようになる -->
+      <div class="markdownx">
+        <td>{{ post.get_text_markdownx | safe}}</td>
+      </div>
+    </tr>
+    <tr>
+      <th>日付</th>
+      <td>{{ post.date }}</td>
+    </tr>
+</table>
