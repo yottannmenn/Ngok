@@ -40,7 +40,7 @@ LOGGING = {
         'file': {
             'level': 'INFO',
             'class': 'logging.FileHandler',
-            'filename': '/var/log/{}/app.log'.format(PROJECT_NAME),
+            'filename': '/home/log/{}/app.log'.format(PROJECT_NAME),
             'formatter': 'production',
         },
     },

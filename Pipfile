@@ -9,6 +9,7 @@ wakatime = "*"
 django-bootstrap4 = "*"
 django-markdownx = "*"
 django-environ = "*"
+mysqlclient = "*"
 
 [dev-packages]
 
