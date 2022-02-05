@@ -40,7 +40,7 @@ LOGGING = {
         'file': {
             'level': 'INFO',
             'class': 'logging.FileHandler',
-            'filename': '/home/log/{}/app.log'.format(PROJECT_NAME),
+            'filename': '/var/log/{}/app.log'.format(PROJECT_NAME),
             'formatter': 'production',
         },
     },
@@ -64,7 +64,7 @@ LOGGING = {
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
-STATIC_ROOT = '/home/www/{}/static'.format(PROJECT_NAME)
+STATIC_ROOT = '/var/www/{}/static'.format(PROJECT_NAME)
 
 # メディアファイル用の設定
 MEDIA_URL = '/media/'
